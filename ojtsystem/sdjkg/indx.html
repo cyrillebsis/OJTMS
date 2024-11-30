@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fas fa-th"></i>
+            <span>Dashboard</span>
+        </div>
+        <nav>
+            <a href="#" class="active">
+                <i class="fas fa-th"></i>
+                Dashboard
+            </a>
+            <a href="#">
+                <i class="fas fa-check"></i>
+                Attendance
+            </a>
+            <a href="#">
+                <i class="fas fa-bell"></i>
+                Notification
+            </a>
+            <a href="#">
+                <i class="fas fa-chart-line"></i>
+                Progress Report
+            </a>
+            <a href="#">
+                <i class="fas fa-user"></i>
+                Profile
+            </a>
+            <a href="#" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <h1>Dashboard</h1>
+        
+        <div class="dashboard-grid">
+            <div class="card user-card">
+                <h2>Jaypee Pualenco</h2>
+            </div>
+
+            <div class="card time-card">
+                <h2>Total Rendered Time:</h2>
+                <div class="time">2.30 hr/s</div>
+            </div>
+
+            <div class="card tasks-assigned">
+                <h2>Total Tasks Assigned</h2>
+                <div class="stat-circle">
+                    <span class="number">5</span>
+                </div>
+            </div>
+
+            <div class="card tasks-completed">
+                <h2>Total Tasks Completed</h2>
+                <div class="stat-circle">
+                    <span class="number">4</span>
+                </div>
+            </div>
+
+            <div class="card current-task">
+                <h2>"Build a Product Landing Page"</h2>
+                <div class="date">Monday, October 21, 2024</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
