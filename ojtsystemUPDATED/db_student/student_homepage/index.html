@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="dropdown-content" id="dropdown">
+            <div class="sidebar">
+                <nav class="nav">
+                  <button class="nav-button">
+                    <span class="icon-layout-grid"></span>
+                    <p>Dashboard</p>
+                  </button>
+                  <button class="nav-button" onclick="window.location.href='../student_attendance/index.html'">
+                    <span class="icon-check-square"></span>
+                    <p>Attendance</p>
+                  </button>
+                  <button class="nav-button" onclick="window.location.href='../'">
+                    <span class="icon-bell"></span>
+                    <p>Notification</p>
+                  </button>
+                  <button class="nav-button" onclick="window.location.href='../student_progress reports/sample.html'">
+                    <span class="icon-clipboard-list"></span>
+                    <p>Progress Report</p>  
+                  </button>
+                    <button class="nav-button" onclick="window.location.href='../'">
+                    <span class="icon-user"></span>
+                    <p>Profile</p>
+                  </button>
+                  <button class="nav-button" onclick="window.location.href='../../../homepage/index.html'">
+                    <span class="icon-log-out"></span>
+                    <p>Log out</p>
+                  </button>
+                </nav>
+              </div>
+        </div>
+    </div>     
+    <div class="dashboard">
+        <h1>Dashboard</h1>
+        
+        <div class="top-cards">
+            <div class="card greeting">
+                <div class="greeting-text">Good Day!</div>
+                <div class="user-name">Jaypee Pualenco</div>
+            </div>
+            
+            <div class="card time">
+                <div class="time-label">Total Rendered Time:</div>
+                <div class="time-value">2.30 hr/s</div>
+            </div>
+        </div>
+
+        <div class="stats-cards">
+            <div class="card stat">
+                <h2>Total Tasks Assigned</h2>
+                <div class="progress-circle">
+                    <div class="progress-circle-inner">
+                        <span class="number">5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card stat">
+                <h2>Total Tasks Completed</h2>
+                <div class="progress-circle">
+                    <div class="progress-circle-inner">
+                        <span class="number">4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card new-task">
+            <div class="task-label">New Task</div>
+            <div class="task-title">"Build a Product Landing Page"</div>
+            <div class="task-date">Monday, October 21, 2024</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+    <script src="script.js"></script> 
+</body>
+</html>

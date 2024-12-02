@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="company-name text-center">Company name</div>
+            <h1 class="text-center">Internship Jobs</h1>
+            <div class="menu-btn">☰</div>
+        </header>
+
+        <div class="sidebar">
+            <div class="close-btn">×</div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="../login/index.html">Intern</a></li>
+                    <li><a href="">Department Head</a></li>
+                    <li><a href="#">HR Department</a></li>
+                    <li><a href="#">School</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="jobs-grid">
+            <div class="job-card" style="background-color: #fff5eb;">
+                <div class="date">20 May, 2024</div>
+                <h2>Web<br>Developer</h2>
+                <a href="../input_appliacation/index.html"><button class="apply-btn">Apply</button></a>
+            </div>
+
+            <div class="job-card" style="background-color: #ffe4e4;">
+                <div class="date">20 May, 2024</div>
+                <h2>Project<br>Accountant</h2>
+                <a href="../input_appliacation/index.html"><button class="apply-btn">Apply</button></a>
+            </div>
+
+            <div class="job-card" style="background-color: #f0f4ff;">
+                <div class="date">20 May, 2024</div>
+                <h2>Mobile<br>Developer</h2>
+                <a href="../input_appliacation/index.html"><button class="apply-btn">Apply</button></a>
+            </div>
+
+            <div class="job-card" style="background-color: #e8fff0;">
+                <div class="date">20 May, 2024</div>
+                <h2>Graphic<br>Designer</h2>
+                <a href="../input_appliacation/index.html"><button class="apply-btn">Apply</button></a>
+            </div>
+
+            <div class="job-card" style="background-color: #e0f4f4;">
+                <div class="date">20 May, 2024</div>
+                <h2>System<br>Administrator</h2>
+                <a href="../input_appliacation/index.html"><button class="apply-btn">Apply</button></a>
+            </div>
+
+            <div class="job-card" style="background-color: #e6fbff;">
+                <div class="date">20 May, 2024</div>
+                <h2>Human<br>Resources</h2>
+                <a href="../input_appliacation/index.html"><button class="apply-btn">Apply</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const closeBtn = document.querySelector('.close-btn');
+        const overlay = document.querySelector('.overlay');
+        
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+        
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html> 
