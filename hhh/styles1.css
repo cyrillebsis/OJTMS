@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.nav-link {
+    color: #6c757d;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0d6efd;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+/* Content Area */
+#content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.card-title {
+    color: #1a1a1a;
+}
+
+/* Animation */
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+} 

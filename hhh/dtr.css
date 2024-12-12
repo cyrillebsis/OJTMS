@@ -1,0 +1,85 @@
+/* Card Styles */
+.card {
+    transition: transform 0.2s;
+    border: none;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Summary Cards */
+.summary-card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.summary-card .card-body {
+    padding: 1.5rem;
+}
+
+.summary-card .card-subtitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.summary-card .card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Table Styles */
+.table td {
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table th {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.badge {
+    font-size: 0.85em;
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+/* Button Styles */
+.btn-group .btn {
+    padding: 0.25rem 0.5rem;
+}
+
+.btn-group .btn i {
+    font-size: 0.9rem;
+}
+
+/* Progress Bar */
+.progress {
+    height: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+#dtrHistoryTable {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#dtrHistoryTable th,
+#dtrHistoryTable td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+.badge {
+    padding: 0.5em 0.75em;
+    font-size: 0.875em;
+    border-radius: 0.25rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+} 
